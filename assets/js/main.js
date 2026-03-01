@@ -238,7 +238,10 @@
 
     const lastFinish = (n > 1 ? (n - 1) * step : 0) + moveDurMs;
 
-    setTimeout(() => stonesWrap.classList.add("svg-on"), lastFinish + svgDelayMs);
+    setTimeout(
+      () => stonesWrap.classList.add("svg-on"),
+      lastFinish + svgDelayMs,
+    );
   }
 
   // ------------------------------------------------------------
